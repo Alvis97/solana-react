@@ -1,0 +1,34 @@
+.App {
+  text-align: left;
+}
+
+main{
+  padding: 20px;
+
+  h1{
+    font-size: 60px;
+    max-width: 800px;
+  }
+
+  h2{
+    font-size: 30px;
+    max-width: 800px;
+  }
+
+  a{
+    font-size: 30px;
+    margin-left: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.SlideContainer{
+  height: 350px;
+  width: 900px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 120px;
+}
+
+

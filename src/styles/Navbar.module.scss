@@ -1,0 +1,88 @@
+.parent{
+    width: 100vw;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// General styles
+.navbar {
+    position: relative;
+  }
+  
+  // Hamburger Button
+  .hamburger {
+    position: fixed;
+    top: 7px;
+    right: 7px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: white;
+  }
+  
+  // Hamburger Bars
+  .bar {
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    transition: 0.3s;
+  }
+  
+  // X Animation when Menu is Open
+  .barOpen:nth-child(1) {
+    transform: rotate(45deg) translate(13px, 13px);
+  }
+  .barOpen:nth-child(2) {
+    opacity: 0;
+  }
+  .barOpen:nth-child(3) {
+    transform: rotate(-45deg) translate(13px, -13px);
+  }
+  
+  // Menu Styles
+  .menu {
+    position: fixed;
+    top: 34px;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    list-style: none;
+    padding: 0;
+  }
+  
+  // Open state
+  .open {
+    right: 0;
+  }
+  
+  // Menu Links
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
