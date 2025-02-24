@@ -4,13 +4,14 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 
+
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route  />
-        <Route  /> 
+        <Route path="/" element={<Home />} />
+        <Route path="/Blog" element={<Blog />}  /> 
       </Routes>
     </Router>
   );
