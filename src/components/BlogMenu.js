@@ -1,21 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+import blogPost from "../data/blogPost";
+import blogStyle from "../styles/Blogstyle.module.scss";
 
-function BlogMenu({ posts, onSelect }) {
+function BlogMenu( {onSelect} ) {
   return (
-    <div>
-      <h2>Blog Menu 📚</h2>
-      {posts.map((post) => (
-        <button 
-          key={post.id} 
-          onClick={() => onSelect(post)}
-          style={{ display: "block", margin: "10px 0", padding: "8px" }}
-        >
-          {post.title}
-        </button>
-      ))}
+    <div className={blogStyle.menu}>
+      {blogPost.length > 0 ? (
+        blogPost.map((post) => (
+          <button
+            className={blogStyle.menuBtn}
+            key={post.id}
+            onClick={() => onSelect(post)}
+          >
+            {post.title}
+          </button>
+        ))
+      ) : (
+        <p>No blog posts available.</p>
+      )}
     </div>
   );
 }
 
 export default BlogMenu;
+
 

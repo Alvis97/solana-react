@@ -8,9 +8,9 @@ function Navbar() {
 
   return (
     <div className={navStyle.parent}>
-       <p>Solana With React</p>
+       <p>Learn My Crypto</p>
 
-       <button className={navStyle.hamburger} onClick={() => setIsOpen(!isOpen)}>
+       {/* <button className={navStyle.hamburger} onClick={() => setIsOpen(!isOpen)}>
        <div className={`${navStyle.bar} ${isOpen ? navStyle.barOpen : ''}`}></div>
         <div className={`${navStyle.bar} ${isOpen ? navStyle.barOpen : ''}`}></div>
         <div className={`${navStyle.bar} ${isOpen ? navStyle.barOpen : ''}`}></div>
@@ -18,9 +18,14 @@ function Navbar() {
   
       <ul className={`${navStyle.menu} ${isOpen ? navStyle.open : ''}`}>
         <li><a href="/">Home</a></li>
-        <li><a href="/Basics">What is Crypto?</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/code">Solana Code</a></li>
+      </ul> */}
+      <div className={navStyle.DeskMenu}>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/">Visuals/Learn By Doing</a>
+      </div>
       
     </div>
   )
