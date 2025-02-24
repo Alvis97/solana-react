@@ -18,7 +18,7 @@ function Navbar() {
   
       <ul className={`${navStyle.menu} ${isOpen ? navStyle.open : ''}`}>
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/Basics">What is Crypto?</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
       
@@ -26,4 +26,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;
